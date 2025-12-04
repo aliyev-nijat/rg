@@ -1,0 +1,55 @@
+package az.idtech.nijat.lesson_oop.task7;
+
+public class Employee {
+
+    private String name;
+    private int salary;
+    private Address address;
+
+    public Employee(String name, int salary, Address address) {
+        this.name = name;
+        this.salary = salary;
+        this.address = address;
+    }
+
+    public void showEmployeeDetails() {
+        System.out.printf("""
+                        Name: %s
+                        Salary: %d AZN,
+                        Address details:
+                        City: %s
+                        Street: %s
+                        Zip code: %d
+                        """,
+                name,
+                salary,
+                address.getCity(),
+                address.getStreet(),
+                address.getZipcode()
+        );
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+}
