@@ -1,7 +1,5 @@
 package az.idtech.nijat.mitderm1.bank;
 
-import java.util.Scanner;
-
 public class BankAccount {
 
     private long accountNumber;
